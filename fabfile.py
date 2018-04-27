@@ -60,10 +60,10 @@ def nginx_start():
 
 @fabric.api.task
 def install_fabric():
-	#This is intended to install fabric on centos7
-	#Enabling EPEL repo to install pip on Centos 7
-	sudo("yum --enablerepo=extras install epel-release", pty=True)
-	#Install pip
-	sudo("yum install python-pip", pty=True)
-	#Install fabric
-	sudo("yum install fabric", pty=True)
+    #This is intended to install fabric on centos7
+    #Enabling EPEL repo to install pip on Centos 7
+    sudo("yum --enablerepo=extras install epel-release", pty=True)
+    #Install pip
+    sudo("yum install python-pip", pty=True)
+    #Install fabric
+    sudo("yum install fabric", pty=True)
